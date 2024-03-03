@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/styles.css">
+    <title>App Megatel</title>
+</head>
+
+<body>
+    <section id="inicio" class="seccion-inicial">
+
+        <div class="logo-inicio">
+            <h1>
+                <span class="span-mega">MEGA</span><span class="span-tel">TEL</span><span class="span-CRM"> CRM</span>
+            </h1>
+        </div>
+
+        <div id="fomuliario-registro" class="formulario-ingreso-datos">
+            <form action="/">
+                <h2>Formulario de Registro</h2>
+
+                <div class="input-box">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[3-7][0-9]{9}" placeholder="Ingrese un número de teléfono válido" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="empresa">Empresa</label>
+                    <input type="text" id="empresa" name="empresa">
+                </div>
+
+                <div class="botones-formulario">
+                    <button id="boton-form-enviar" class="boton-enviar-form">Enviar</button>
+                    <button id="boton-form-buscar" class="boton-enviar-form">Buscar</button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
