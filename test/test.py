@@ -2,12 +2,12 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 
-# Inicializa el navegador
-driver = webdriver.Chrome()  # Asegúrate de tener el controlador de Chrome instalado y en tu PATH
+
+driver = webdriver.Chrome()
 
 try:
     # Abre la aplicación web
-    driver.get("URL_DE_TU_APLICACION")
+    driver.get("http://localhost:3000")
 
     # Localiza los elementos del formulario
     nombre_input = driver.find_element_by_id("nombre")

@@ -19,7 +19,11 @@
     "prettier": "^3.2.5"
   },
   "dependencies": {
+    "@wdio/cli": "^8.32.4",
+    "chromedriver": "^122.0.4",
     "cors": "^2.8.5",
-    "express": "^4.18.3"
+    "express": "^4.18.3",
+    "selenium": "^2.20.0",
+    "webdriverio": "^8.32.4"
   }
 }
