@@ -1,17 +1,38 @@
 //ELEMENTOS DEL FORMULARIO
 const formularioRegistro = document.getElementById("formulario-registro");
+const botonEnviar = document.getElementById("boton-form-enviar");
 
+alert("hola")
 
 function iniciarApp() {
+
+}
+
+function generarId(){
+  botonEnviar.addEventListener("click", (event) =>{
+    /*const id = `${Math.random()}`;
+    console.log("se genera in id" + id);
+    agregarRegistros(id)*/
+    alert("Hola")
+
+  })
+}
+
+function agregarRegistros(){
+
   formularioRegistro.addEventListener("submit", (event) => {
     event.preventDefault();
-
+    alert("hola")
+    const id = `${Math.random()}`;
     const nombre = document.getElementById("nombre").value;
     const correo = document.getElementById("correo").value;
     const telefono = document.getElementById("telefono").value;
     const empresa = document.getElementById("empresa").value;
 
+
+
     let transaction = {
+
       nombre: nombre,
       correo: correo,
       telefono: telefono,
@@ -38,8 +59,8 @@ function iniciarApp() {
     })
 
   })
-}
 
+}
 
 window.addEventListener("load", iniciarApp);
 
