@@ -132,3 +132,28 @@ body {
   padding: 5px;
   border: 1px solid #ccc;
 }
+
+#seccion-manejar-datos{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  gap: 20px;
+}
+
+.botones-manejar-datos{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 30px;
+
+}
+
+#div-nueva-fila{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 3px;
+  background-color: #b7c0fe;
+  padding: 5px;
+  width: 60%; /* Ajusta el ancho al 60% de la pantalla */
+  margin-bottom: 30px; /* Centra la tabla en la pantalla */
+}
